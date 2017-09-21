@@ -26,7 +26,6 @@ def show_folder():
         os.listdir()
     if show.upper() == 'N':
         print('Exiting ...')
-    
 
 def clean_up_ppt():
     
@@ -47,26 +46,11 @@ def clean_up_word():
         #change the location of file
         shutil.move(fromPath, global_path_1)
     print('All Word files are cleaned up! Does someone smell Lysol?') 
-    
-       
-'''
-def func_dm():
-    global global_path_1
-    for file in glob.glob('*.docx'):
-        fromPath = os.path.abspath(file)
-        shutil.move(fromPath, global_path_1)
-        
-def dirDescription(pathCheck):
-    """ Gives the description recursively of the folders and files with in each folder. shows the tree basically. """
-    for dirpath, dirnames, filenames in os.walk(path)
-    print 
-    
-'''
-
 
 global_path_1 = ''
-global_path_2 = None
+global_path_2 = ''
 global_dir_name = ''
+
 
 
 #file path to search
