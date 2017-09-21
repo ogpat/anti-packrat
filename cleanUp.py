@@ -3,17 +3,6 @@ import glob
 from datetime import date
 import shutil
 
-#To do's :
-# 1. Add uer input to confirm
-# 2. add user input to start/end Y/N
-
-
-
-#global paths:
-
-
-
-
 #naming convention for directory
 def generate_dir_name(dirName):
     #better way to do this is to use the os.join
@@ -25,11 +14,6 @@ def generate_dir_name(dirName):
     global global_dir_name 
     global_dir_name = dirName
     os.makedirs(new_folder)
-
-
-
-
-
 
 #the listdir() function doesn't seem to be working 
 def show_folder():
@@ -62,7 +46,9 @@ def clean_up_word():
         fromPath = os.path.abspath(file)
         #change the location of file
         shutil.move(fromPath, global_path_1)
-    print('All Word files are cleaned up! Does someone smell Lysol?')    
+    print('All Word files are cleaned up! Does someone smell Lysol?') 
+    
+       
 '''
 def func_dm():
     global global_path_1
@@ -73,7 +59,9 @@ def func_dm():
 def dirDescription(pathCheck):
     """ Gives the description recursively of the folders and files with in each folder. shows the tree basically. """
     for dirpath, dirnames, filenames in os.walk(path)
-    print '''
+    print 
+    
+'''
 
 
 global_path_1 = ''
